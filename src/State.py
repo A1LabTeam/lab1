@@ -47,19 +47,19 @@ class State:
     def r4(self):
         currSummary = self.summary()
         if self.M != self.Box or self.On != True or self.success != False:
-            log.fail("r3")
+            log.fail("r4")
         else:
             self.On = False
-            log.success("r3")
+            log.success("r4")
         afterSummary = self.summary()
         print("from" + currSummary + "to" + afterSummary)
 
     def r5(self):
         currSummary = self.summary()
         if self.M != self.Box or self.M != self.B or self.On != True or self.success != False:
-            log.fail("r3")
+            log.fail("r5")
         else:
             self.success = True
-            log.success("r3")
+            log.success("r5")
         afterSummary = self.summary()
         print("from" + currSummary + "to" + afterSummary)
